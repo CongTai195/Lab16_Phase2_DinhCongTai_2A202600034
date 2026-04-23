@@ -20,7 +20,7 @@ class JudgeResult(BaseModel):
     spurious_claims: list[str] = Field(default_factory=list, description="Các thông tin sai lệch hoặc không có trong ngữ cảnh")
 
 class ReflectionEntry(BaseModel):
-    attempt_id: int = Field(description="Thứ tự của lần thử")
+    attempt_id: int = Field(default=0, description="Thứ tự của lần thử")
     failure_reason: str = Field(description="Lý do thất bại của lần thử trước")
     lesson: str = Field(description="Bài học rút ra từ lỗi sai")
     next_strategy: str = Field(description="Chiến thuật cho lần thử tiếp theo")

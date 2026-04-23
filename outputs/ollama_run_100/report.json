@@ -1,0 +1,2047 @@
+{
+  "meta": {
+    "dataset": "hotpot_100.json",
+    "mode": "llama3",
+    "num_records": 200,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 100,
+      "em": 0.83,
+      "avg_attempts": 1,
+      "avg_token_estimate": 1816.8,
+      "avg_latency_ms": 18881.64
+    },
+    "reflexion": {
+      "count": 100,
+      "em": 0.94,
+      "avg_attempts": 1.23,
+      "avg_token_estimate": 2651.89,
+      "avg_latency_ms": 25418.44
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.11,
+      "attempts_abs": 0.23,
+      "tokens_abs": 835.09,
+      "latency_abs": 6536.8
+    }
+  },
+  "failure_modes": {
+    "none": 177,
+    "wrong_final_answer": 17,
+    "reflection_overfit": 6
+  },
+  "examples": [
+    {
+      "qid": "5a8b57f25542995d1e6f1371",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "According to the provided context:\n\n* Scott Derrickson is an American director, screenwriter, and producer.\n* Ed Wood (Edward Davis Wood Jr.) was also an American filmmaker, actor, writer, producer, and director.\n\nTherefore, yes, Scott Derrickson and Ed Wood were of the same nationality, which is American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c7595554299585d9e36b6",
+      "agent_type": "react",
+      "gold_answer": "Chief of Protocol",
+      "predicted_answer": "The answer is Secretary of State.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85ea095542994775f606a8",
+      "agent_type": "react",
+      "gold_answer": "Animorphs",
+      "predicted_answer": "The Animorphs series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbf0a255429947ff17385a",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Yes, according to the context, the Laleli Mosque and Esma Sultan Mansion are both located in the Ortak\u00f6y neighborhood of Istanbul, Turkey.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e3ea95542995a26add48d",
+      "agent_type": "react",
+      "gold_answer": "Greenwich Village, New York City",
+      "predicted_answer": "The director of the romantic comedy \"Big Stone Gap\", Adriana Trigiani, is based in Greenwich Village, New York City.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd94525542992ac4f382d2",
+      "agent_type": "react",
+      "gold_answer": "YG Entertainment",
+      "predicted_answer": "2014 S/S is the debut album of WINNER, and it was formed by YG Entertainment.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85b2d95542997b5ce40028",
+      "agent_type": "react",
+      "gold_answer": "Eenasul Fateh",
+      "predicted_answer": "Eenasul Fateh, also known as Aladin. He is a Bangladeshi-British cultural practitioner, magician, live artist, and former international management consultant.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87ab905542996e4f3088c1",
+      "agent_type": "react",
+      "gold_answer": "3,677 seated",
+      "predicted_answer": "The answer is 4,000. According to the content from the Androscoggin Bank Colis\u00e9e source, the arena has a capacity of 4,000 (3,677 seated).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bbb64554299042af8f7cc",
+      "agent_type": "react",
+      "gold_answer": "Terry Richardson",
+      "predicted_answer": "Annie Morton was born on October 8, 1970, and Terry Richardson was born on August 14, 1965. Therefore, Terry Richardson is older than Annie Morton.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8db19d5542994ba4e3dd00",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Local H and For Against are from the United States. Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987. For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7166395542994082a3e814",
+      "agent_type": "react",
+      "gold_answer": "Kansas Song",
+      "predicted_answer": "The answer to the question is \"Rock Chalk, Jayhawk\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a877e5d5542993e715abf7d",
+      "agent_type": "react",
+      "gold_answer": "David Weissman",
+      "predicted_answer": "David Weissman.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3b0bf5542992ade7c6e39",
+      "agent_type": "react",
+      "gold_answer": "1999",
+      "predicted_answer": "The answer is 1999.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab56e32554299637185c594",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "According to the provided context:\n\n* The Random House Tower is a mixed-use tower in New York City that serves as the headquarters of book publisher Random House and a luxury apartment complex.\n* 888 7th Avenue is an office skyscraper with 46 floors, which currently carries the Vornado Realty Trust corporate headquarters. Previously known as the Arlen Building, it was completed in 1969.\n\nBased on this information, neither the Random House Tower nor 888 7th Avenue is primarily used for real estate purposes. The Random House Tower has a mixed-use function, and 888 7th Avenue is an office building with various tenants.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6d09255429954757d337d",
+      "agent_type": "react",
+      "gold_answer": "from 1986 to 2013",
+      "predicted_answer": "Alex Ferguson, who recruited David Beckham, managed Manchester United from 1986 to 2013.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e05c55429976ec32bc5f",
+      "agent_type": "react",
+      "gold_answer": "9,984",
+      "predicted_answer": "Brown State Fishing Lake is located in the United States. According to the United Nations, the estimated population of the United States as of 2020 is approximately 331 million people.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3e45655429976abd1bcd4",
+      "agent_type": "react",
+      "gold_answer": "the North Atlantic Conference",
+      "predicted_answer": "The North Atlantic Conference.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab29c24554299449642c932",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Giuseppe Verdi and Ambroise Thomas are opera composers.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0d4c9554299603e418468",
+      "agent_type": "react",
+      "gold_answer": "1969 until 1974",
+      "predicted_answer": "According to the context, Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration. Therefore, he served during the presidency of Richard Nixon, who served from 1969 to 1974.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8133725542995ce29dcbdb",
+      "agent_type": "react",
+      "gold_answer": "Robert Erskine Childers DSC",
+      "predicted_answer": "Robert Erskine Childers was the writer from England.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7a8175542993210983ed8",
+      "agent_type": "react",
+      "gold_answer": "Pedro Rodr\u00edguez",
+      "predicted_answer": "Pedro Rodr\u00edguez is the other Mexican Formula One race car driver who has held a podium position.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6050f55429929b0807a5e",
+      "agent_type": "react",
+      "gold_answer": "Sonic",
+      "predicted_answer": "Jim Cummings, who sang \"A Rather Blustery Day\", also voiced Miles \"Tails\" Prower in the Sonic the Hedgehog video game series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adddccd5542997dc7907069",
+      "agent_type": "react",
+      "gold_answer": "keyboard function keys",
+      "predicted_answer": "Aside from the Apple Remote, the keyboard function keys can also be used to control the Front Row media center software application.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2070a5542994d89d5b313",
+      "agent_type": "react",
+      "gold_answer": "Badly Drawn Boy",
+      "predicted_answer": "Based on the provided context, Wolf Alice has a four-piece band composition (Ellie Rowsell - vocals/guitar, Joff Oddie - guitars/vocals, Theo Ellis - bass, and Joel Amey - drums/vocals), which suggests an instrument-to-person ratio of 4:4.\n\nBadly Drawn Boy, on the other hand, is a solo project by Damon Gough, who performs as Badly Drawn Boy. As such, the instrument-to-person ratio would be significantly higher for Wolf Alice compared to Badly Drawn Boy.\n\nTherefore, Wolf Alice has a higher instrument-to-person ratio than Badly Drawn Boy.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae22b8d554299234fd0440f",
+      "agent_type": "react",
+      "gold_answer": "World's Best Goalkeeper",
+      "predicted_answer": "Peter Schmeichel was voted the IFFHS World's Best Goalkeeper in 1992.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a722b8655429971e9dc9329",
+      "agent_type": "react",
+      "gold_answer": "Barton Lee Hazlewood",
+      "predicted_answer": "The writer of \"These Boots Are Made for Walkin'\" is Lee Hazlewood. Lee Hazlewood died on August 4, 2007.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf37a95542995ec70e8f97",
+      "agent_type": "react",
+      "gold_answer": "1838",
+      "predicted_answer": "Virginia Commonwealth University (VCU) was founded in 1838.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd259d55429924427fcf1a",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Dictyosperma and Huernia are described as genera in their respective sources.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a828c8355429966c78a6a50",
+      "agent_type": "react",
+      "gold_answer": "Henry J. Kaiser",
+      "predicted_answer": "No, that is not correct. Henry J. Kaiser founded the Kaiser Shipyards, but he did not found Kaiser Ventures. According to the context, Kaiser Ventures (formerly Kaiser Steel) was founded by Henry J. Kaiser to provide steel plate for the Pacific Coast shipbuilding industry. Edgar Fosburgh Kaiser Jr., grandson of Henry J. Kaiser, later became involved in the company.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a3e745542996c9b8d5e70",
+      "agent_type": "react",
+      "gold_answer": "Arena of Khazan",
+      "predicted_answer": "The answer is Arena of Khazan.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac23ff0554299636651994d",
+      "agent_type": "react",
+      "gold_answer": "2000",
+      "predicted_answer": "According to the context, Poison does not have an album titled \"Shut Up, Make Love\". Instead, \"Shut Up, Make Love\" is a song by Poison, released in 2000 as the first single from their album \"Crack a Smile...and More!\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4a3265542995ad6573de5",
+      "agent_type": "react",
+      "gold_answer": "Fujioka, Gunma",
+      "predicted_answer": "Buck-Tick hails from Fujioka, Gunma in Japan.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0361155429925eb1afc2c",
+      "agent_type": "react",
+      "gold_answer": "Charles Eug\u00e8ne",
+      "predicted_answer": "The French ace pilot and adventurer who flew L'Oiseau Blanc were Charles Nungesser and Fran\u00e7ois Coli.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc0a5d5542993f40c73c64",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, they are not both American documentaries. While \"Freakonomics\" is an American documentary film, \"In the Realm of the Hackers\" is an Australian documentary film.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cc50e554299452d57ba3e",
+      "agent_type": "react",
+      "gold_answer": "Letters to Cleo",
+      "predicted_answer": "According to the sources provided, Letters to Cleo has six members:\n\n1. Kay Hanley\n2. Greg McKenna\n3. Michael Eisenstein\n4. Stacy Jones\n5. Scott Riebling\n6. Tom Polce (later member)\n\nScreaming Trees had four original members:\n\n1. Mark Lanegan (vocals)\n2. Gary Lee Conner (guitar)\n3. Van Conner (bass)\n4. Mark Pickerel (drums)\n\nLater, Barrett Martin replaced Mark Pickerel on drums.\n\nTherefore, Letters to Cleo has more members than Screaming Trees.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abf63f15542997ec76fd3ea",
+      "agent_type": "react",
+      "gold_answer": "October 1922",
+      "predicted_answer": "The Russian Civil War ended in 1923.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ef2a75542995a26add583",
+      "agent_type": "react",
+      "gold_answer": "2000",
+      "predicted_answer": "Carlo Rovelli has worked in France since 2000.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80721b554299485f5985ef",
+      "agent_type": "react",
+      "gold_answer": "World War II",
+      "predicted_answer": "The Livesey Hall War Memorial commemorates the fallen of both World War I and World War II.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab51dae5542991779162d82",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, Elko Regional Airport is not located in Michigan. According to the context, it is located in Elko County, Nevada. Gerald R. Ford International Airport, on the other hand, is located in Cascade Township, approximately 13 miles southeast of Grand Rapids, Michigan.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7571135542992d0ec05f98",
+      "agent_type": "react",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0e1e5542990783324e1a",
+      "agent_type": "react",
+      "gold_answer": "Scotch Collie",
+      "predicted_answer": "According to the context, the answer is the Scotch Collie. The text states that the Scotch Collie \"generally believed to have descended from a variety of ancient herding dogs, some dating back to the Roman occupation, which may have included Roman Cattle Dogs, Native Celtic Dogs and Viking Herding Spitzes. Other ancestors include the Gordon and Irish Setters.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74106b55429979e288289e",
+      "agent_type": "react",
+      "gold_answer": "Mumbai",
+      "predicted_answer": "According to the context, Sachin Warrier worked as a software engineer at Tata Consultancy Services (TCS) in Kochi. The headquarters of TCS is located in Mumbai, Maharashtra.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a79311755429970f5fffe67",
+      "agent_type": "react",
+      "gold_answer": "1962",
+      "predicted_answer": "According to the context, Masakazu Katsura was born in 1962. Therefore, he wrote and illustrated the manga series \"I\"s.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2d3df554299194fa9352c",
+      "agent_type": "react",
+      "gold_answer": "sovereignty",
+      "predicted_answer": "The Battle of Adwa, where Giuseppe Arimondi died, secured Ethiopian sovereignty.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a760ab65542994ccc918697",
+      "agent_type": "react",
+      "gold_answer": "Nelson Rockefeller",
+      "predicted_answer": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under Vice President Nelson Rockefeller.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d54165542995f4f402256",
+      "agent_type": "react",
+      "gold_answer": "Yellowcraig",
+      "predicted_answer": "The answer is: Yellowcraigs.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab859a955429934fafe6d7b",
+      "agent_type": "react",
+      "gold_answer": "Phil Spector",
+      "predicted_answer": "The writer of the song \"To Know Him Is to Love Him\" that was inspired by words on a tombstone and was the first track on the box set Back to Mono is Phil Spector.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add61d65542995b365fab21",
+      "agent_type": "react",
+      "gold_answer": "Organizations could come together to address global issues",
+      "predicted_answer": "A former Soviet statesman, Mikhail Gorbachev, initiated the World Summit of Nobel Peace Laureates.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e068b5542995085b37384",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, Ferocactus and Silene are both types of plants. Ferocactus is a genus of cacti, while Silene is a genus of flowering plants in the family Caryophyllaceae.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbf698554299114383a0b5",
+      "agent_type": "react",
+      "gold_answer": "English Electric Canberra",
+      "predicted_answer": "The English Electric Canberra was not used in the South West Pacific theatre of World War II. The Canberra is a British first-generation jet-powered medium bomber that was developed and introduced to service with the Royal Air Force (RAF) in May 1951, after the end of World War II.\n\nTo answer your question, no specific British jet-powered medium bomber was used in the South West Pacific theatre during World War II.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e1027554299653c1aa15f",
+      "agent_type": "react",
+      "gold_answer": "2009 Big 12 Conference",
+      "predicted_answer": "The answer is 2009 and the Big 12 Conference. According to the context, the 2009 Colorado Buffaloes football team finished the season with a record of 3\u20139 and 2\u20136 in Big 12 play.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab84bf555429916710eb01f",
+      "agent_type": "react",
+      "gold_answer": "1,462",
+      "predicted_answer": "In 1991, Euromarch\u00e9 was bought by Carrefour. According to the source \"Carrefour\", Carrefour operates in more than 30 countries and has over 1,462 hypermarkets as of 2016.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77724455429972597f153e",
+      "agent_type": "react",
+      "gold_answer": "Indianapolis Motor Speedway",
+      "predicted_answer": "The Indianapolis Motor Speedway hosts a 500-mile race every May, specifically the Indianapolis 500 Mile Race.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87c13f5542996e4f30890c",
+      "agent_type": "react",
+      "gold_answer": "Rome",
+      "predicted_answer": "According to the context, Franco Corelli starred in a film called \"Tosca\" (1956) which is based on the opera \"Tosca\" by Giacomo Puccini. Therefore, the answer is Rome, where the film was made at Cinecitt\u00e0.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab96ab755429970cfb8eacd",
+      "agent_type": "react",
+      "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "predicted_answer": "According to the context, Ellie Goulding worked with Max Martin, Savan Kotecha, and Ilya Salmanzadeh on her third studio album, \"Delirium\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a43eb5542996c9b8d5e82",
+      "agent_type": "react",
+      "gold_answer": "Marion, South Australia",
+      "predicted_answer": "Marion is the Australian city that founded in 1838 and contains a boarding school, Westminster School, which was opened by a Prime Minister of Australia (Robert Menzies) and named after a school in London (Westminster School).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae73acb5542991e8301cc07",
+      "agent_type": "react",
+      "gold_answer": "Drifting",
+      "predicted_answer": "Drifting.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7320565542991f9a20c61d",
+      "agent_type": "react",
+      "gold_answer": "Keith Bostic",
+      "predicted_answer": "Jerry Glanville was born on October 14, 1941, while Keith Bostic was born on January 17, 1961. Therefore, Keith Bostic is younger than Jerry Glanville.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae32e125542991a06ce9946",
+      "agent_type": "react",
+      "gold_answer": "35,124",
+      "predicted_answer": "According to the context, Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England. The city in which Kirton End is located is Boston, and according to the 2001 census, its population was 35,124.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc53f75542996e6852530a",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, they are not.\n\n* Cypress refers to a conifer tree or shrub belonging to the family Cupressaceae.\n* Ajuga is a genus of flowering plants in the mint family Lamiaceae.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b20335542996c9b8d5fb3",
+      "agent_type": "react",
+      "gold_answer": "shortest player ever to play in the National Basketball Association",
+      "predicted_answer": "Muggsy Bogues holds the distinction of being a member of the Charlotte Hornets during their 1992-93 season and later serving as the head coach for the WNBA team Charlotte Sting.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85fb085542994775f606de",
+      "agent_type": "react",
+      "gold_answer": "Ronald Shusett",
+      "predicted_answer": "According to the context, Steven Spielberg served as an executive producer for the 1987 film \"Innerspace\".",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7be2595542997c3ec972ac",
+      "agent_type": "react",
+      "gold_answer": "Adeline Virginia Woolf",
+      "predicted_answer": "Virginia Woolf was born on January 25, 1882, while Emma Bull was born on December 13, 1954. Therefore, Virginia Woolf was born earlier than Emma Bull.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77152355429966f1a36c2e",
+      "agent_type": "react",
+      "gold_answer": "821",
+      "predicted_answer": "The answer is None, because there is no nursery rhyme titled \"What Are Little Girls Made Of?\" in the provided context. The episode title \"What Are Little Girls Made Of?\" is actually inspired by the traditional nursery rhyme \"What Are Little Boys Made Of?\", which has a Roud Folk Song Index number of 821.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f4c8d554299458435d5a3",
+      "agent_type": "react",
+      "gold_answer": "more than 70 countries",
+      "predicted_answer": "According to the context, Halliburton has operations in more than 70 countries.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80840f554299485f59863b",
+      "agent_type": "react",
+      "gold_answer": "Charmed",
+      "predicted_answer": "Rose McGowan was best known for playing Paige Matthews in the WB supernatural drama series \"Charmed\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8361b65542992ef85e22a0",
+      "agent_type": "react",
+      "gold_answer": "International Boxing Hall of Fame",
+      "predicted_answer": "According to the context, Vince Phillips held the IBF junior welterweight title from 1997 to 1999. The International Boxing Federation (IBF) is one of four major organizations recognized by the International Boxing Hall of Fame (IBHOF). Therefore, Vince Phillips held a junior welterweight title by an organization recognized by the larger Hall of Fame.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7ba7a5542993210983f12",
+      "agent_type": "react",
+      "gold_answer": "Usher",
+      "predicted_answer": "The answer is Usher. His song \"Yeah!\" was released as the lead single from his fourth studio album \"Confessions\" (2004) on January 27, 2004, and it was stuck behind Taylor Swift's \"Our Song\" at number two on the Billboard Hot Country Songs chart for eight consecutive weeks.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2acff55429921a00ab02b",
+      "agent_type": "react",
+      "gold_answer": "Bill Murray",
+      "predicted_answer": "Based on the context provided, I can see that \"The Hard Easy\" is an episode of the TV series \"Adventure Time\". In this episode, Brian Doyle-Murray plays Prince Huge. Since there's no mention of another person being his brother in this specific episode, it seems that we don't have enough information to answer this question.\n\nHowever, if you'd like to know more about Brian Doyle-Murray, I can tell you that he is the older brother of actor/comedian Bill Murray!",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5aba7cfe554299232ef4a2fd",
+      "agent_type": "react",
+      "gold_answer": "Carabao Cup",
+      "predicted_answer": "The EFL Cup (currently sponsored by Carabao).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5aba0554299546bf82f17",
+      "agent_type": "react",
+      "gold_answer": "Teen Titans Go!",
+      "predicted_answer": "The answer is \"Teen Titans\" and its spin-off \"Teen Titans Go!\".",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1f4cb554299234fd0436d",
+      "agent_type": "react",
+      "gold_answer": "276,170 inhabitants",
+      "predicted_answer": "According to the context, the city where the 122nd SS-Standarte was formed is Strasbourg. As per the source on Strasbourg, the city proper had 276,170 inhabitants and both the Eurom\u00e9tropole de Strasbourg (Greater Strasbourg) and the Arrondissement of Strasbourg had 484,157 inhabitants in 2014.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7e1fc55429952e35ea9cc",
+      "agent_type": "react",
+      "gold_answer": "orange",
+      "predicted_answer": "According to the context, during Oranjegekte (Orange craze) or to celebrate the national holiday Koningsdag, people in the Netherlands typically wear orange clothing.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae37c765542992f92d822d4",
+      "agent_type": "react",
+      "gold_answer": "Tromeo and Juliet",
+      "predicted_answer": "The answer is Tromeo and Juliet.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae33c4d5542992f92d82262",
+      "agent_type": "react",
+      "gold_answer": "William Jefferson Clinton",
+      "predicted_answer": "Robert Suettinger was the national intelligence officer for East Asia under President Bill Clinton.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77cb335542997042120b3a",
+      "agent_type": "react",
+      "gold_answer": "John John Florence",
+      "predicted_answer": "John John Florence.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8979f4554299669944a52e",
+      "agent_type": "react",
+      "gold_answer": "Ann",
+      "predicted_answer": "The answer is Ann. The actress's full name is Sela Ann Ward, so her middle name is Ann.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a713ea95542994082a3e6e4",
+      "agent_type": "react",
+      "gold_answer": "Apalachees",
+      "predicted_answer": "Alvaro Mexia had a diplomatic mission with the Ais native population.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78bd9b554299078472774a",
+      "agent_type": "react",
+      "gold_answer": "British",
+      "predicted_answer": "Alfred Gell was a British social anthropologist, and Edmund Leach was also a British social anthropologist.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7625e8554299109176e66a",
+      "agent_type": "react",
+      "gold_answer": "1865",
+      "predicted_answer": "According to the source \"George V\", King George V was born on June 3, 1865.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2dd2055429928c423950d",
+      "agent_type": "react",
+      "gold_answer": "Newport",
+      "predicted_answer": "The county seat of Sullivan County, where East Lempster, New Hampshire is located, is Newport.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abdf12255429976d4830a2f",
+      "agent_type": "react",
+      "gold_answer": "Bob Seger",
+      "predicted_answer": "The answer is Bob Seger.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88658955429938390d3f47",
+      "agent_type": "react",
+      "gold_answer": "Conscription",
+      "predicted_answer": "The practice of requiring only men to register for the draft was constitutional.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86ebac55429960ec39b6d6",
+      "agent_type": "react",
+      "gold_answer": "Mondelez International, Inc.",
+      "predicted_answer": "Mondelez International.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5aba5d2e55429901930fa799",
+      "agent_type": "react",
+      "gold_answer": "Monica Lewinsky",
+      "predicted_answer": "The answer is Monica Lewinsky.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5736e5542990ba0bbb2b3",
+      "agent_type": "react",
+      "gold_answer": "April 1, 1949",
+      "predicted_answer": "Paul Manafort was born on April 1, 1949.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae005b555429942ec259bec",
+      "agent_type": "react",
+      "gold_answer": "1866",
+      "predicted_answer": "The novel that Louren\u00e7o Mutarelli based \"Nina\" on, which is an adaptation of Fyodor Dostoyevsky's \"Crime and Punishment\", was first published in 1866.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7759fc5542993569682d60",
+      "agent_type": "react",
+      "gold_answer": "Canary Islands, Spain",
+      "predicted_answer": "Teide National Park is located in Tenerife, Canary Islands, Spain.\n\nGarajonay National Park is located on the island of La Gomera, one of the Canary Islands, Spain.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a835478554299123d8c20ed",
+      "agent_type": "react",
+      "gold_answer": "250 million",
+      "predicted_answer": "The question does not mention any specific story or title related to Roald Dahl, so it is difficult to determine which story you are referring to. However, based on the context provided, I assume that you are asking about \"Mrs. Bixby and the Colonel's Coat\". The source of this information is not mentioned in the given text, but as there is no mention of sales figures for \"Mrs. Bixby and the Colonel's Coat\", it can be inferred that the sales figure is unknown.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5aba749055429901930fa7d8",
+      "agent_type": "react",
+      "gold_answer": "director",
+      "predicted_answer": "Chris Menges and Aram Avakian both share the occupation of film director.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abfb3425542990832d3a1c0",
+      "agent_type": "react",
+      "gold_answer": "The Conversation",
+      "predicted_answer": "Andrew Jaspan was the co-founder of \"The Conversation\", an independent not-for-profit website of analysis and news from the university and research sector.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3165c5542995ef918c10a",
+      "agent_type": "react",
+      "gold_answer": "John Waters",
+      "predicted_answer": "John Waters.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae53b545542990ba0bbb23c",
+      "agent_type": "react",
+      "gold_answer": "Las Vegas Strip in Paradise",
+      "predicted_answer": "The hotel and casino located where Bill Cosby's third album was recorded is Flamingo Hotel in Las Vegas, Nevada.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae224da554299234fd043ee",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, the drinks Gibson and Zurracapote do not both contain gin. The Gibson is a mixed drink made with gin and vermouth, while Zurracapote is a Spanish drink made with red wine, fruit, sugar, and cinnamon.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2b770554299495565db0f",
+      "agent_type": "react",
+      "gold_answer": "March and April",
+      "predicted_answer": "The London International Documentary Festival (LIDF) is an annual documentary film festival that takes place in the months of March and April every year. The event is presented in association with the London Review of Books.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80b3a9554299485f5986cc",
+      "agent_type": "react",
+      "gold_answer": "Fairfax County",
+      "predicted_answer": "Tysons Galleria is located in Fairfax County, Virginia, United States.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e0a005542995085b373a1",
+      "agent_type": "react",
+      "gold_answer": "IT products and services",
+      "predicted_answer": "According to the context, Viglen Ltd, which is led by Bordan Tkachuk, provides IT products and services, including storage systems, servers, workstations, and data/voice communications equipment and services.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1b8ee5542994d76dccedc",
+      "agent_type": "react",
+      "gold_answer": "Levni Yilmaz",
+      "predicted_answer": "According to the provided context, it is Lev Yilmaz who is a San Francisco based independent film maker, artist and publisher, best known for his \u201cTales of Mere Existence\u201d animated comic series.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adccd795542990d50227d2c",
+      "agent_type": "react",
+      "gold_answer": "Beijing",
+      "predicted_answer": "There is no ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China. The Moroccan ambassador in Beijing is the official representative of the Government in Rabat to the Government of the People's Republic of China.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84c4135542994c784dda31",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city, while Fuding is a county-level city.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b57f25542995d1e6f1371",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, Scott Derrickson and Ed Wood were both American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c7595554299585d9e36b6",
+      "agent_type": "reflexion",
+      "gold_answer": "Chief of Protocol",
+      "predicted_answer": "Based on the provided context, there is no information that suggests the woman who portrayed Corliss Archer in the film \"Kiss and Tell\" held a government position. The context only mentions Shirley Temple as the actress who played Corliss Archer in the film, but does not provide any information about her holding a government position.\n\nTo confirm this answer, it would be helpful to re-read the provided context and look for any subtle hints or clues that might have been missed initially. Additionally, considering asking follow-up questions to clarify any ambiguities or uncertainties.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "reflection_overfit",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a85ea095542994775f606a8",
+      "agent_type": "reflexion",
+      "gold_answer": "Animorphs",
+      "predicted_answer": "The Animorphs series by K.A. Applegate. The companion books to this series include \"Megamorphs\", which tells the story of enslaved worlds and alien species through the perspectives of various characters in the Animorphs universe.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbf0a255429947ff17385a",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Yes, the Laleli Mosque and Esma Sultan Mansion are located in the same neighborhood, which is Laleli, Fatih, Istanbul, Turkey.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "reflection_overfit",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a8e3ea95542995a26add48d",
+      "agent_type": "reflexion",
+      "gold_answer": "Greenwich Village, New York City",
+      "predicted_answer": "The director of the romantic comedy \"Big Stone Gap\", Adriana Trigiani, is based in Greenwich Village, New York City.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd94525542992ac4f382d2",
+      "agent_type": "reflexion",
+      "gold_answer": "YG Entertainment",
+      "predicted_answer": "2014 S/S is the debut album of WINNER, and it was formed by YG Entertainment.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85b2d95542997b5ce40028",
+      "agent_type": "reflexion",
+      "gold_answer": "Eenasul Fateh",
+      "predicted_answer": "Eenasul Fateh, also known as Aladin, is a Bangladeshi-British cultural practitioner, magician, live artist, and former international management consultant.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87ab905542996e4f3088c1",
+      "agent_type": "reflexion",
+      "gold_answer": "3,677 seated",
+      "predicted_answer": "According to the content from the \"Androscoggin Bank Colis\u00e9e\" source, the Androscoggin Bank Colis\u00e9e is a 4,000 capacity (3,677 seated) multi-purpose arena. Therefore, the Lewiston Maineiacs played their home games at an arena that can seat approximately 3,677 people.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bbb64554299042af8f7cc",
+      "agent_type": "reflexion",
+      "gold_answer": "Terry Richardson",
+      "predicted_answer": "Based on the context provided, we can verify the exact birth dates and ages to determine who is older.\n\nAnnie Morton was born on October 8, 1970.\nTerry Richardson was born on August 14, 1965.\n\nTo compare their ages, let's calculate their age at the time of the question. (Assuming the question is asked in a specific year.)\n\nAnnie Morton: Born in 1970, she would be approximately 51-52 years old by the time the question is asked.\nTerry Richardson: Born in 1965, he would be approximately 55-56 years old by the time the question is asked.\n\nAccording to this calculation, Terry Richardson is older than Annie Morton.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8db19d5542994ba4e3dd00",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Local H and For Against are from the United States.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7166395542994082a3e814",
+      "agent_type": "reflexion",
+      "gold_answer": "Kansas Song",
+      "predicted_answer": "The answer is \"Kansas Song (We're From Kansas)\". This is the fight song of the University of Kansas.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a877e5d5542993e715abf7d",
+      "agent_type": "reflexion",
+      "gold_answer": "David Weissman",
+      "predicted_answer": "David Weissman.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3b0bf5542992ade7c6e39",
+      "agent_type": "reflexion",
+      "gold_answer": "1999",
+      "predicted_answer": "The correct answer is 1999.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab56e32554299637185c594",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, they are not both used for real estate. The Random House Tower is a mixed-use tower that serves as the headquarters of book publisher Random House and a luxury apartment complex. On the other hand, 888 7th Avenue is an office skyscraper with Vornado Realty Trust's corporate headquarters located there.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6d09255429954757d337d",
+      "agent_type": "reflexion",
+      "gold_answer": "from 1986 to 2013",
+      "predicted_answer": "The football manager who recruited David Beckham managed Manchester United between 1990 and 2002.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e05c55429976ec32bc5f",
+      "agent_type": "reflexion",
+      "gold_answer": "9,984",
+      "predicted_answer": "According to the provided context, Brown State Fishing Lake is located in Brown County, Kansas. The United States (Kansas) has a population of approximately 331 million inhabitants.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3e45655429976abd1bcd4",
+      "agent_type": "reflexion",
+      "gold_answer": "the North Atlantic Conference",
+      "predicted_answer": "The North Atlantic Conference (NAC).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab29c24554299449642c932",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Giuseppe Verdi and Ambroise Thomas were opera composers.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0d4c9554299603e418468",
+      "agent_type": "reflexion",
+      "gold_answer": "1969 until 1974",
+      "predicted_answer": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration, which spanned from 1969 to 1974.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8133725542995ce29dcbdb",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Erskine Childers DSC",
+      "predicted_answer": "Henry Roth was an American novelist and short story writer, whereas Robert Erskine Childers was a British writer.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7a8175542993210983ed8",
+      "agent_type": "reflexion",
+      "gold_answer": "Pedro Rodr\u00edguez",
+      "predicted_answer": "Pedro Rodr\u00edguez is the other Mexican Formula One driver who has finished on the podium.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6050f55429929b0807a5e",
+      "agent_type": "reflexion",
+      "gold_answer": "Sonic",
+      "predicted_answer": "Jim Cummings, who sang \"A Rather Blustery Day\", also voiced Miles \"Tails\" Prower in the video game series \"Sonic the Hedgehog\".",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5adddccd5542997dc7907069",
+      "agent_type": "reflexion",
+      "gold_answer": "keyboard function keys",
+      "predicted_answer": "According to the context, aside from the Apple Remote, the keyboard function keys can be used to control the Front Row media center software.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2070a5542994d89d5b313",
+      "agent_type": "reflexion",
+      "gold_answer": "Badly Drawn Boy",
+      "predicted_answer": "According to the sources, Wolf Alice is a four-piece band with Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).\n\nBadly Drawn Boy, on the other hand, is an English indie singer-songwriter who writes, produces, and plays several instruments on his own album \"The Hour of Bewilderbeast\". He also performs as a solo artist.\n\nTherefore, Wolf Alice has a higher instrument to person ratio compared to Badly Drawn Boy.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae22b8d554299234fd0440f",
+      "agent_type": "reflexion",
+      "gold_answer": "World's Best Goalkeeper",
+      "predicted_answer": "Peter Schmeichel was voted the IFFHS World's Best Goalkeeper in 1992.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a722b8655429971e9dc9329",
+      "agent_type": "reflexion",
+      "gold_answer": "Barton Lee Hazlewood",
+      "predicted_answer": "The writer of \"These Boots Are Made for Walkin'\" is Lee Hazlewood. Lee Hazlewood passed away on August 4, 2007.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf37a95542995ec70e8f97",
+      "agent_type": "reflexion",
+      "gold_answer": "1838",
+      "predicted_answer": "Virginia Commonwealth University (VCU) was founded in 1838.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd259d55429924427fcf1a",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Dictyosperma and Huernia are described as genera.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a828c8355429966c78a6a50",
+      "agent_type": "reflexion",
+      "gold_answer": "Henry J. Kaiser",
+      "predicted_answer": "No, that's not correct. Kaiser Ventures corporation was founded by Henry J. Kaiser, but he is not known as the father of modern American shipbuilding. That title belongs to Edgar Fosburgh Kaiser Jr., the grandson of Henry J. Kaiser.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a3e745542996c9b8d5e70",
+      "agent_type": "reflexion",
+      "gold_answer": "Arena of Khazan",
+      "predicted_answer": "The answer is Arena of Khazan.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac23ff0554299636651994d",
+      "agent_type": "reflexion",
+      "gold_answer": "2000",
+      "predicted_answer": "Poison does not have an album called \"Shut Up, Make Love\". The song \"Shut Up, Make Love\" is a track from their 2000 album \"Crack a Smile...and More!\", but it is not the title of the album.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4a3265542995ad6573de5",
+      "agent_type": "reflexion",
+      "gold_answer": "Fujioka, Gunma",
+      "predicted_answer": "Buck-Tick hails from Fujioka, Gunma, Japan.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0361155429925eb1afc2c",
+      "agent_type": "reflexion",
+      "gold_answer": "Charles Eug\u00e8ne",
+      "predicted_answer": "According to the provided context, Charles Nungesser and Fran\u00e7ois Coli were the French ace pilots who flew L'Oiseau Blanc during their attempt to fly the Atlantic Ocean.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "reflection_overfit",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5abc0a5d5542993f40c73c64",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, they are not both American documentaries.\n\n\"Freakonomics Radio\" is an American public radio program that discusses socioeconomic issues for a general audience, but it's not a documentary film.\n\n\"In the Realm of the Hackers\" is an Australian documentary film about the prominent hacker community in Melbourne, Australia in the late 1980s until early 1990.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cc50e554299452d57ba3e",
+      "agent_type": "reflexion",
+      "gold_answer": "Letters to Cleo",
+      "predicted_answer": "According to the provided context, Letters to Cleo has 6 members: Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later Tom Polce. \n\nScreaming Trees had 4 original members: Mark Lanegan, Gary Lee Conner, Van Conner, and Mark Pickerel. Later, Barrett Martin replaced Mark Pickerel.\n\nTherefore, Letters to Cleo had more members than Screaming Trees.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abf63f15542997ec76fd3ea",
+      "agent_type": "reflexion",
+      "gold_answer": "October 1922",
+      "predicted_answer": "According to the provided context, Alexander Kerensky was defeated and destroyed by the Bolsheviks during the Russian Civil War, which ended around 1922-1923.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8ef2a75542995a26add583",
+      "agent_type": "reflexion",
+      "gold_answer": "2000",
+      "predicted_answer": "The answer is: since 2000. Carlo Rovelli, the author of Seven Brief Lessons on Physics, has worked in France since 2000.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80721b554299485f5985ef",
+      "agent_type": "reflexion",
+      "gold_answer": "World War II",
+      "predicted_answer": "The Livesey Hall War Memorial commemorates the fallen of both World War I and World War II.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab51dae5542991779162d82",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, both Elko Regional Airport and Gerald R. Ford International Airport are not located in Michigan. \n\nElko Regional Airport (EKO) is located in Elko County, Nevada.\n\nGerald R. Ford International Airport (GRR) is located in Cascade Township, approximately 13 miles southeast of Grand Rapids, Michigan.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7571135542992d0ec05f98",
+      "agent_type": "reflexion",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0e1e5542990783324e1a",
+      "agent_type": "reflexion",
+      "gold_answer": "Scotch Collie",
+      "predicted_answer": "According to the context, the answer is the Scotch Collie.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74106b55429979e288289e",
+      "agent_type": "reflexion",
+      "gold_answer": "Mumbai",
+      "predicted_answer": "The company that Sachin Warrier worked for as a software engineer, Tata Consultancy Services (TCS), is headquartered in Mumbai, Maharashtra.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a79311755429970f5fffe67",
+      "agent_type": "reflexion",
+      "gold_answer": "1962",
+      "predicted_answer": "According to the context, Masakazu Katsura was born in 1962. Therefore, the answer is 1962.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2d3df554299194fa9352c",
+      "agent_type": "reflexion",
+      "gold_answer": "sovereignty",
+      "predicted_answer": "The battle in which Giuseppe Arimondi lost his life, the Battle of Adwa, secured Ethiopian sovereignty.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a760ab65542994ccc918697",
+      "agent_type": "reflexion",
+      "gold_answer": "Nelson Rockefeller",
+      "predicted_answer": "Based on the provided context, Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under Vice President Nelson Rockefeller.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d54165542995f4f402256",
+      "agent_type": "reflexion",
+      "gold_answer": "Yellowcraig",
+      "predicted_answer": "According to the source \"Dirleton\", the medieval fortress in Dirleton, East Lothian, Scotland is Dirleton Castle, which lies around 2 mi west of North Berwick and around 19 mi east of Edinburgh. According to the same source, the village of Dirleton borders Yellowcraigs, a coastal area of forest, beach, and grassland, to the south.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab859a955429934fafe6d7b",
+      "agent_type": "reflexion",
+      "gold_answer": "Phil Spector",
+      "predicted_answer": "The writer of the song \"To Know Him Is to Love Him\" that was inspired by words on a tombstone and was the first track on the box set Back to Mono is Phil Spector.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add61d65542995b365fab21",
+      "agent_type": "reflexion",
+      "gold_answer": "Organizations could come together to address global issues",
+      "predicted_answer": "A former Soviet statesman, Mikhail Gorbachev, initiated the World Summit of Nobel Peace Laureates as a forum in which the Nobel Peace Laureates and the Peace Laureate Organizations could come together to address global issues with a view to encourage and support peace and human well-being in the world.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e068b5542995085b37384",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, Ferocactus and Silene are both types of plants.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbf698554299114383a0b5",
+      "agent_type": "reflexion",
+      "gold_answer": "English Electric Canberra",
+      "predicted_answer": "Based on the context provided, the correct answer is the Savoia-Marchetti SM.79 \"Sparviero\", which was a three-engined Italian medium bomber used in the Mediterranean theater during World War II, not in the South West Pacific theatre. The English Electric Canberra did not exist during that time period.\n\nHowever, since the question asks about a British first-generation jet-powered medium bomber used in the South West Pacific theatre of World War II, I would focus on identifying other aircraft models that fit this description. Some possible aircraft to consider include:\n\n* Short Stirling\n* Avro Lancaster\n* Handley Page Halifax\n\nThese bombers were used by the Allies during World War II and might have been used in the South West Pacific theatre.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "reflection_overfit",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a8e1027554299653c1aa15f",
+      "agent_type": "reflexion",
+      "gold_answer": "2009 Big 12 Conference",
+      "predicted_answer": "The answer is 2009, Big 12 Conference. According to the source, \"The 2009 Colorado Buffaloes football team represented the University of Colorado in the 2009 NCAA Division I FBS college football season. The Buffaloes were led by fourth year head coach Dan Hawkins and played their home games at Folsom Field. The Buffaloes finished the season with a record of 3\u20139 and 2\u20136 in Big 12 play.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab84bf555429916710eb01f",
+      "agent_type": "reflexion",
+      "gold_answer": "1,462",
+      "predicted_answer": "In 1991, Euromarch\u00e9 was bought by Carrefour. At the end of 2016, Carrefour operated approximately 1,462 hypermarkets worldwide.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77724455429972597f153e",
+      "agent_type": "reflexion",
+      "gold_answer": "Indianapolis Motor Speedway",
+      "predicted_answer": "The Indianapolis Motor Speedway.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87c13f5542996e4f30890c",
+      "agent_type": "reflexion",
+      "gold_answer": "Rome",
+      "predicted_answer": "According to the context, Franco Corelli, the \"Prince of tenors\", starred in a film based on an opera by Giacomo Puccini in Rome. Specifically, he appeared in the 1956 Italian musical film \"Tosca\" directed by Carmine Gallone and starring Franca Duval, Afro Poli and Franco Corelli.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab96ab755429970cfb8eacd",
+      "agent_type": "reflexion",
+      "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "predicted_answer": "According to the context, Ellie Goulding worked with Max Martin, Savan Kotecha and Ilya Salmanzadeh on her third studio album, \"Delirium\". Specifically, they wrote the song \"On My Mind\" together.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a43eb5542996c9b8d5e82",
+      "agent_type": "reflexion",
+      "gold_answer": "Marion, South Australia",
+      "predicted_answer": "Based on the context provided, I understand that you are asking which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.\n\nAfter reviewing the information, I found that Marion is the suburb in Adelaide mentioned as being founded in 1838. Additionally, Westminster School, located at Marion, South Australia, was opened by the Prime Minister Robert Menzies in 1961 and is named after Westminster School in London.\n\nTherefore, my answer is: Adelaide.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ae73acb5542991e8301cc07",
+      "agent_type": "reflexion",
+      "gold_answer": "Drifting",
+      "predicted_answer": "D1NZ is a production car drifting series in New Zealand, which is based on the driving technique of drifting (oversteering).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7320565542991f9a20c61d",
+      "agent_type": "reflexion",
+      "gold_answer": "Keith Bostic",
+      "predicted_answer": "According to the context, Jerry Glanville was born on October 14, 1941, and Keith Bostic (William Keith Bostic) was born on January 17, 1961. Therefore, Keith Bostic is younger than Jerry Glanville.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae32e125542991a06ce9946",
+      "agent_type": "reflexion",
+      "gold_answer": "35,124",
+      "predicted_answer": "According to the context provided, Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England. Therefore, the city in which Kirton End is located is Boston, and according to the 2001 census, Boston had a population of 35,124.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc53f75542996e6852530a",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, they are not.\n\nCypress refers to a conifer tree or shrub that belongs to the family Cupressaceae. It is not a genus.\n\nAjuga is a genus of 40 species annual and perennial herbaceous flowering plants in the mint family Lamiaceae.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b20335542996c9b8d5fb3",
+      "agent_type": "reflexion",
+      "gold_answer": "shortest player ever to play in the National Basketball Association",
+      "predicted_answer": "According to the sources provided, Muggsy Bogues played point guard for the Charlotte Hornets during their 1992-93 season. Additionally, after his NBA career, he served as head coach of the now-defunct WNBA team Charlotte Sting. Therefore, Muggsy Bogues holds the distinction of being a former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and later became the head coach of the Charlotte Sting in the WNBA.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85fb085542994775f606de",
+      "agent_type": "reflexion",
+      "gold_answer": "Ronald Shusett",
+      "predicted_answer": "According to the context, Steven Spielberg served as an executive producer for the film \"Innerspace\" (1987), which had a score composed by Jerry Goldsmith.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7be2595542997c3ec972ac",
+      "agent_type": "reflexion",
+      "gold_answer": "Adeline Virginia Woolf",
+      "predicted_answer": "Virginia Woolf was born on January 25, 1882. Emma Bull was born on December 13, 1954. Therefore, Virginia Woolf was born earlier than Emma Bull.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77152355429966f1a36c2e",
+      "agent_type": "reflexion",
+      "gold_answer": "821",
+      "predicted_answer": "The answer is None, because \"What Are Little Girls Made Of?\" is an episode title from a TV series and not a nursery rhyme. The original question seems to be mistaken, as there is no evidence of a nursery rhyme with this title. The actual nursery rhyme is \"What Are Little Boys Made Of?\", which has a Roud Folk Song Index number of 821.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f4c8d554299458435d5a3",
+      "agent_type": "reflexion",
+      "gold_answer": "more than 70 countries",
+      "predicted_answer": "According to the context, Halliburton, the other corporation, has operations in more than 70 countries.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80840f554299485f59863b",
+      "agent_type": "reflexion",
+      "gold_answer": "Charmed",
+      "predicted_answer": "Rose McGowan was best known for playing Paige Matthews in the WB supernatural drama series \"Charmed\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8361b65542992ef85e22a0",
+      "agent_type": "reflexion",
+      "gold_answer": "International Boxing Hall of Fame",
+      "predicted_answer": "Vince Phillips held the IBF junior welterweight title, which is one of four major organizations recognized by the International Boxing Hall of Fame (IBHOF).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7ba7a5542993210983f12",
+      "agent_type": "reflexion",
+      "gold_answer": "Usher",
+      "predicted_answer": "According to the provided context, the answer is Usher. His song \"Yeah!\" was released as the lead single from his album \"Confessions\" and it peaked at number 2 on the Billboard Hot 100 chart, stuck behind Taylor Swift's \"Our Song\", for eight consecutive weeks.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2acff55429921a00ab02b",
+      "agent_type": "reflexion",
+      "gold_answer": "Bill Murray",
+      "predicted_answer": "Based on the context, the younger brother of Brian Doyle-Murray is Bill Murray.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5aba7cfe554299232ef4a2fd",
+      "agent_type": "reflexion",
+      "gold_answer": "Carabao Cup",
+      "predicted_answer": "The Carabao Cup.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5aba0554299546bf82f17",
+      "agent_type": "reflexion",
+      "gold_answer": "Teen Titans Go!",
+      "predicted_answer": "According to the context, Tara Strong's major voice role in an animated series based on the DC Comics fictional superhero team, the \"Teen Titans\", is the animated television series \"Teen Titans\".",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "reflection_overfit",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ae1f4cb554299234fd0436d",
+      "agent_type": "reflexion",
+      "gold_answer": "276,170 inhabitants",
+      "predicted_answer": "According to the context, the city where the 122nd SS-Standarte was formed is Strasbourg. As of 2014, the city proper had a population of 276,170 inhabitants, and both the Eurom\u00e9tropole de Strasbourg (Greater Strasbourg) and the Arrondissement of Strasbourg had 484,157 inhabitants.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7e1fc55429952e35ea9cc",
+      "agent_type": "reflexion",
+      "gold_answer": "orange",
+      "predicted_answer": "According to the context, people in the Netherlands wear orange clothing during Oranjegekte, which is also a phenomenon that occurs during major sporting events and during Koningsdag, an annual holiday celebrating the king's birthday. The traditional color of the Dutch royal family, the House of Orange-Nassau, is orange, and it is often worn as a symbol of national pride and celebration.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae37c765542992f92d822d4",
+      "agent_type": "reflexion",
+      "gold_answer": "Tromeo and Juliet",
+      "predicted_answer": "The answer is Tromeo and Juliet.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae33c4d5542992f92d82262",
+      "agent_type": "reflexion",
+      "gold_answer": "William Jefferson Clinton",
+      "predicted_answer": "Bill Clinton.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77cb335542997042120b3a",
+      "agent_type": "reflexion",
+      "gold_answer": "John John Florence",
+      "predicted_answer": "John John Florence.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8979f4554299669944a52e",
+      "agent_type": "reflexion",
+      "gold_answer": "Ann",
+      "predicted_answer": "According to the context, Sela Ward plays the role of Bobbi Bacha in the TV movie \"Suburban Madness\" (2004). The source text does not provide information about Bobbi Bacha's middle name. Therefore, I must conclude that the answer is unknown. \n\nPlease note that previous reflections have emphasized the importance of carefully reading and understanding the context to ensure accurate answers. In this case, while we know Sela Ward plays the role of Bobbi Bacha, there is no information provided about her character's middle name.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "reflection_overfit",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a713ea95542994082a3e6e4",
+      "agent_type": "reflexion",
+      "gold_answer": "Apalachees",
+      "predicted_answer": "The Ais native population.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a78bd9b554299078472774a",
+      "agent_type": "reflexion",
+      "gold_answer": "British",
+      "predicted_answer": "Alfred Gell and Edmund Leach were both British social anthropologists.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7625e8554299109176e66a",
+      "agent_type": "reflexion",
+      "gold_answer": "1865",
+      "predicted_answer": "According to the source, the King who made the 1925 Birthday Honours was King George V. He was born on June 3, 1865.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2dd2055429928c423950d",
+      "agent_type": "reflexion",
+      "gold_answer": "Newport",
+      "predicted_answer": "The county seat of Sullivan County, New Hampshire, where East Lempster is located, is Newport.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abdf12255429976d4830a2f",
+      "agent_type": "reflexion",
+      "gold_answer": "Bob Seger",
+      "predicted_answer": "The rock singer's stage name is Bob Seger.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88658955429938390d3f47",
+      "agent_type": "reflexion",
+      "gold_answer": "Conscription",
+      "predicted_answer": "The practice of requiring only men to register for the draft was constitutional.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86ebac55429960ec39b6d6",
+      "agent_type": "reflexion",
+      "gold_answer": "Mondelez International, Inc.",
+      "predicted_answer": "Handi-Snacks are a snack food product line sold by Mondelez International.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5aba5d2e55429901930fa799",
+      "agent_type": "reflexion",
+      "gold_answer": "Monica Lewinsky",
+      "predicted_answer": "The answer is Monica Lewinsky. She was featured in the book \"Their Lives: The Women Targeted by the Clinton Machine\" as one of seven women who crossed paths with Bill Clinton. Additionally, she was a former White House intern and was involved in the Lewinsky scandal that occurred during her time at the White House.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5736e5542990ba0bbb2b3",
+      "agent_type": "reflexion",
+      "gold_answer": "April 1, 1949",
+      "predicted_answer": "The American lawyer, lobbyist, and political consultant who was a senior member of the presidential campaign of Donald Trump, is Paul Manafort. According to the context, Paul Manafort Jr. was born on April 1, 1949.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae005b555429942ec259bec",
+      "agent_type": "reflexion",
+      "gold_answer": "1866",
+      "predicted_answer": "According to the context, the novel \"Crime and Punishment\" by Dostoyevsky, which Louren\u00e7o Mutarelli based his work \"Nina\" on, was first published in 1866.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7759fc5542993569682d60",
+      "agent_type": "reflexion",
+      "gold_answer": "Canary Islands, Spain",
+      "predicted_answer": "Teide National Park is located in Tenerife, Canary Islands, Spain. Garajonay National Park is also located on the island of La Gomera, one of the Canary Islands, Spain.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a835478554299123d8c20ed",
+      "agent_type": "reflexion",
+      "gold_answer": "250 million",
+      "predicted_answer": "Unfortunately, I couldn't find any information about the number of copies sold for \"Mrs. Bixby and the Colonel's Coat\" in the provided context. This story is mentioned as one of Roald Dahl's short stories, but there is no mention of its sales figures. Therefore, my answer is: There is no specific information available on how many copies this particular story has sold.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5aba749055429901930fa7d8",
+      "agent_type": "reflexion",
+      "gold_answer": "director",
+      "predicted_answer": "Chris Menges and Aram Avakian both share the occupation of film director.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abfb3425542990832d3a1c0",
+      "agent_type": "reflexion",
+      "gold_answer": "The Conversation",
+      "predicted_answer": "Andrew Jaspan was the co-founder of \"The Conversation\", an independent not-for-profit website of analysis and news from the university and research sector.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3165c5542995ef918c10a",
+      "agent_type": "reflexion",
+      "gold_answer": "John Waters",
+      "predicted_answer": "John Waters.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae53b545542990ba0bbb23c",
+      "agent_type": "reflexion",
+      "gold_answer": "Las Vegas Strip in Paradise",
+      "predicted_answer": "The hotel and casino where Bill Cosby's third album, \"Why Is There Air?\", was recorded is the Flamingo Hotel in Las Vegas, Nevada.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae224da554299234fd043ee",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, the drinks Gibson and Zurracapote do not both contain gin. The Gibson is a mixed drink made with gin and vermouth, while Zurracapote is an alcoholic mixed drink that typically consists of red wine, fruit, sugar, and cinnamon, but does not contain gin.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2b770554299495565db0f",
+      "agent_type": "reflexion",
+      "gold_answer": "March and April",
+      "predicted_answer": "The answer is March and April every year. According to the context, the London International Documentary Festival (LIDF) is an annual documentary film festival that takes place in the months of March and April every year. The event is presented in association with the London Review of Books.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80b3a9554299485f5986cc",
+      "agent_type": "reflexion",
+      "gold_answer": "Fairfax County",
+      "predicted_answer": "Tysons Galleria is located in Fairfax County, Virginia, United States.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e0a005542995085b373a1",
+      "agent_type": "reflexion",
+      "gold_answer": "IT products and services",
+      "predicted_answer": "According to the source \"Viglen\", Bordan Tkachuk was the CEO of Viglen Ltd, which provides IT products and services, including storage systems, servers, workstations and data/voice communications equipment and services.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1b8ee5542994d76dccedc",
+      "agent_type": "reflexion",
+      "gold_answer": "Levni Yilmaz",
+      "predicted_answer": "According to the context, Lev Yilmaz is the filmmaker known for his \"Tales of Mere Existence\" animated comic series, not Pamela B. Green.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adccd795542990d50227d2c",
+      "agent_type": "reflexion",
+      "gold_answer": "Beijing",
+      "predicted_answer": "According to the source \"Moroccan Ambassador to China\", the Moroccan ambassador in Beijing is the official representative of the Government in Rabat to the Government of the People's Republic of China.\n\nTherefore, the answer is Beijing.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a84c4135542994c784dda31",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city, while Fuding is a county-level city.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "Reflexion helps when the first attempt stops after the first hop or drifts to a wrong second-hop entity. The tradeoff is higher attempts, token cost, and latency. In a real report, students should explain when the reflection memory was useful, which failure modes remained, and whether evaluator quality limited gains."
+}
